@@ -7,8 +7,8 @@ https://i.imgur.com/E7qB0nW.png
 # How To Use
 
 0. I noticed I had dozens of clones and dozens of re-clones from my GitHub repository, while only a few people used the referral code.
-1. Email me at jarettrsdunn+git@gmail.com with video proof or screenshots of BitMEX/Deribit new account creation from today, using below links.
-2. I'll confirm my affiliate coutner has gone up by 1.
+1. Email me at jarettrsdunn+git@gmail.com with video proof or screenshots of BitMEX/Deribit new account creation (verification emails) from today, using below links.
+2. I'll confirm my affiliate counter has gone up by 1.
 3. I'll then either add you to the private repository or send you a .zip of the files.
 4. Thanks!
 
