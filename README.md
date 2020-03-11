@@ -157,3 +157,23 @@ change them to:
 qty = qty * len(self.futures) / 2
 
 
+loads of changes. significant change is that it market orders 1/10 of the amount if pos >350 <-350, every interval, and adjusts the 1/10 mark to achieve a consistent 75% maker volume.
+
+
+This lessens the overall risk and allows for a higher pos_lim_long & short.
+
+
+The more we can keep delta neutral, the less we have to worry about significant moves.
+
+
+How's the bot been running for you? Are you my ref also running eth?
+
+
+We might also want to kill march futures (by default on btc on repo, just remove 'btc-' from 'btc-mar20' and it'll also kill eth mar fut) because we're close to expiry.
+
+
+SLs now reduce to delta neutral, instead of marketing out the entire position. This is extremely helpful in not losing a whole bunch of $ on SL, meaning we can SL more often.
+
+
+Moon!
+
