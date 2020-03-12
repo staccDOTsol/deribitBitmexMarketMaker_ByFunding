@@ -160,6 +160,7 @@ change them to:
 
 qty = qty * len(self.futures) / 2
 
+# A Recent Email
 
 loads of changes. significant change is that it market orders 1/10 of the amount if pos >350 <-350, every interval, and adjusts the 1/10 mark to achieve a consistent 75% maker volume.
 
@@ -181,6 +182,7 @@ SLs now reduce to delta neutral, instead of marketing out the entire position. T
 
 Moon!
 
+# A Recent Reddit Post
 
 Market Maker UP 7.5% before September futures fundnng flipped sides: https://i.imgur.com/gKM1zkU.png
 
@@ -211,6 +213,7 @@ Moon!
 
 https://github.com/DunnCreativeSS/deribitBitmexMarketMaker_ByFunding
 
+# Some Recent Setup Instructions
 
 the defaults are live on jare.cloud:8080
 
