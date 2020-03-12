@@ -1,5 +1,7 @@
 # Hey!
 
+## Telegram: https://t.me/ManyVolumeSignalMonster
+
 # Performance
 
 https://i.imgur.com/E7qB0nW.png
@@ -177,3 +179,83 @@ SLs now reduce to delta neutral, instead of marketing out the entire position. T
 
 Moon!
 
+
+Market Maker UP 7.5% before September futures fundnng flipped sides: https://i.imgur.com/gKM1zkU.png
+
+
+Up a whole 240% at all-time high, settling around 130-140% after September futures dropped below perpetual price, realizing gains on convergence of cash n carry futures arbitrage: https://i.imgur.com/mAEKnJE.png
+
+
+What is it?
+
+
+This Deribit and BitMEX market making bot earns on fee rebates when making an individual post-only limit order turn into a position. It also gains from the (average) difference in spread on an individual instrument, and as I saw overnight while I was sleeping it gains significantly on the convergence of perp vs futures arbitrage based on funding rates.
+
+Moon!
+
+
+You can review the bot's graph in real-time here: http://jare.cloud:8080 - note that since the huge climb and for most of today it took a break, as it noticed the increase in balance and decided to sleep for a day (the higher of my two Takeprofit values). I've manually intervened and it's now pumping out trades again.
+
+
+I'm offering the bot FREE of charge for those people who use my referral link. My referral link earns a % of fees when people market out of a postiion (every other ordering cycle it reduces it's skew, and on either layer of stoploss/takeprofit it first reduces it's skew back to delta-neutral then all the way down to 0 position). I believe in Free and Open Source as a religion - and while the final bot that we end up putting into production will have configs and values fed to it by our AI at Coindex Labs, the Intellectual Property for the bot without AI is mine and I decide to share it. There would need to be literally tens of millions of dollars on this bot for it to hurt anyone else's edge.
+
+
+While I'm asking for people to sign up for referral links, I've closed the repository with the bot until after people provide proof they've signed up on the referral link. While the bot was 100% open-source before, I noticed that 40 people cloned the repository in one day while I only received maybe 2 referral link signups - which isn't sustainable. Once you sign up on the referral link, you're free to review the code in full or have someone audit it.
+
+
+You need to enter your key and secret to the testing.py file for Deribit or bitmex2.py file for BitMEX for the bot to function. It never ever sends these keys anywhere other than to the exchanges, and when it's sent to the exchange it's hashed into a signature that people can't figure out. Moreover, on an exchange like Deribit so long as the keys aren't withdraw keys then there's very little risk in using them in the first place.
+
+Moon!
+
+https://github.com/DunnCreativeSS/deribitBitmexMarketMaker_ByFunding
+
+
+the defaults are live on jare.cloud:8080
+
+
+you'll want to enter key into testing.py for deribit
+
+
+there's directions on the repo
+
+
+you'll need to pip install a few packages
+
+
+along with python first
+
+
+well
+
+
+you'll want to adjust pct_qty_base down or up if you want smaller or larger order sizes
+
+
+max_skew down or up if you want the max exposure +/- to be down or up
+
+
+pct_lim_long and pct_lim_short down or up if you want the total position in a given direction to be less or more
+
+
+risk_charge_vol smaller or larger if you want the distance between orders and best bid/offer to decrease/increase
+
+
+also, in the current version
+
+
+you'll want 2 deribit accounts
+
+
+one has about 1/5 the balance it's key2 and secret2
+
+
+it'll hold a short for the amount of $USD you hold in the first account
+
+
+that's where the 100% came from -  the shorts
+
+
+the idea is 1. there will be convergence of futures arbitrage
+
+
+2. if btc declines, you want to hedge against that so you don't lose too much USD$
