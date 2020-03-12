@@ -1,5 +1,7 @@
 # Hey!
 
+## I cannot and will not assure or imply returns. Risk only what you can afford to lose.
+
 ## Telegram: https://t.me/ManyVolumeSignalMonster
 
 # Performance
