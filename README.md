@@ -265,4 +265,14 @@ the idea is 1. there will be convergence of futures arbitrage
 
 2. if btc declines, you want to hedge against that so you don't lose too much USD$
 
-If you're running a smaller than $200-$300 balance, and get an error for invalid qty, then double your pct_qty_base and re-run. It's trying to enter orders for $0! Also, if you're running more than double $200-$300, be sure to adjust your pct_qty_base downward.
+
+In times of high volatility, if you want it to trade more often change RISK_CHARGE_VOL to 1/2 or 1/3 what it is now
+
+
+and if it takes a break for 1hr too often (it'll tell you in the console) find this line:
+
+if self.vols[k] > 3:
+
+change it to:
+
+if self.vols[k] > 5.5:
