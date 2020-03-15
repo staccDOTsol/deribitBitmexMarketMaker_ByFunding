@@ -251,7 +251,7 @@ also, in the current version
 you'll want 2 deribit accounts
 
 
-one has about 1/5 the balance it's key and secret, the main accoutn is key2 and secret2
+one has about 1/5 the balance it's key2 and secret2, the main accoutn is key and secret
 
 
 it'll hold a short for the amount of $USD you hold in the first account
